@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cactus Runner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="canvas-wrap">
+        <canvas id="game" width="720" height="300" aria-label="Cactus Runner Canvas" role="img"></canvas>
+        <div id="hud" class="hud" aria-hidden="false">
+          <div class="hud-left"><span id="bestLabel">Best: 00000</span></div>
+          <div class="hud-right">
+            <button id="muteBtn" class="mute-btn" type="button" aria-label="Toggle mute" title="Toggle mute" aria-pressed="false">🔊</button>
+          </div>
+          <div id="bannerPause" class="banner" aria-live="polite" aria-atomic="true">Paused</div>
+          <div id="bannerGameOver" class="banner banner-go" aria-live="polite" aria-atomic="true">
+            <div>Game Over</div>
+            <div class="sub">Click / Enter to Restart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
